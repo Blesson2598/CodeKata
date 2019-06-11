@@ -10,6 +10,8 @@ int main()
     for(int i=0;i<l;i++)
     {
     	
+    	if(a[0]=='-')
+    	continue;
     	if(isalpha(a[i]) || !isalnum(a[i]))
     	{
     		printf("Invalid");

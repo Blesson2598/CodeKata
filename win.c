@@ -14,9 +14,13 @@ int main(void) {
 		{
 			if(a[i]>=a[j])
 			{
+				n--;
+				if(n==-1)
+				break;
 				f=1;
 				a[i]='{';
 				break;
+				
 			}
 		}
 		if(f==0)

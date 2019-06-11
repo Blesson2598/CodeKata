@@ -1,5 +1,5 @@
 s=input();
-v="aeiouAeiou";c="bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
+v="aeiouAEIOU";c="bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
 l=len(s)
 for i in range(l):
 	if s in v:

@@ -9,7 +9,8 @@ int main()
     int l=strlen(a);
     for(int i=0;i<l;i++)
     {
-    	if(isalpha(a[i]))
+    	
+    	if(isalpha(a[i]) || !isalnum(a[i]))
     	{
     		printf("Invalid");
     		return 0;

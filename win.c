@@ -7,18 +7,23 @@ int main(void) {
 	int n,i,j,w,min=INT_MAX,k=0;
 	scanf("%s %d",a,&n);
 	int l=strlen(a);
-	w=l-n;
-	for(i=0;i<=l-w;i++)
+	for(i=0;i<l;i++)
 	{
-	 for(j=i;j<i+w;j++)
-	 temp[k++]=a[j];
-	 int t=atoi(temp);
-	 if(t<min)
-	 min=t;
-	 for(int v=0;v<k;v++)
-	 temp[v]='\0';
-	 k=0;
+		int f=0;
+		for(j=i+1;j<l;j++)
+		{
+			if(a[i]>=a[j])
+			{
+				f=1;
+				a[i]='{';
+				break;
+			}
+		}
+		if(f==0)
+		temp[k++]=a[i];
 	}
-	printf("%d",min);
-	return 0;
+	temp[k]='\0';
+	int t=atoi(temp);
+	printf("%d",t);
+	
 }

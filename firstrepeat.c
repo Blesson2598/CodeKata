@@ -1,10 +1,9 @@
-#include<stdio.h>
-
-
+#include <stdio.h>
+ 
 int main() {
 	int size;
 	scanf("%d",&size);
-	int arr[size],mark[size]={0};
+	int arr[size],mark[100000]={0};
 	int ind,ind2;
 	for(ind=0;ind<size;ind++)
 	{
@@ -37,7 +36,7 @@ int main() {
 		min=mark[arr[ind]];
 		ele=arr[ind];
 		}
-		
+ 
 	}
 	if(ele!=909)
 	printf("%d",ele);

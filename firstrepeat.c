@@ -29,8 +29,16 @@ int main() {
 			}
 		}
 	}
+	int min=100000,ele=0;
 	for(ind=0;ind<size;ind++)
-	printf("%d ",arr[ind]);
-	
+	{
+		if(mark[arr[ind]]<min && arr[ind]!=-1 && mark[arr[ind]]!=0)
+		{
+		min=mark[arr[ind]];
+		ele=arr[ind];
+		}
+		
+	}
+	printf("%d",ele);
 	return 0;
 }

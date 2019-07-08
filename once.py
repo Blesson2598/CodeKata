@@ -1,7 +1,8 @@
 import sys
 size=int(input())
 arr=input();
-arr=list(map(int,arr.split(" ")));count=0
+arr=list(map(int,arr.split(" ")))
+count=0
 while count<=size:
 	temp=arr[0]
 	arr.remove(temp)

@@ -29,7 +29,7 @@ int main() {
 			}
 		}
 	}
-	int min=100000,ele=0;
+	int min=100000,ele=909;
 	for(ind=0;ind<size;ind++)
 	{
 		if(mark[arr[ind]]<min && arr[ind]!=-1 && mark[arr[ind]]!=0)
@@ -39,6 +39,9 @@ int main() {
 		}
 		
 	}
+	if(ele!=909)
 	printf("%d",ele);
+	else
+	printf("unique");
 	return 0;
 }

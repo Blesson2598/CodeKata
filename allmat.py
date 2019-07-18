@@ -6,7 +6,10 @@ for i in range(r):
 	s=input().rstrip()
 	arr=list(map(int,s.split(" ")))
 	mat.append(arr)
-fin=[]	
+fin=[]
+if r==1:
+	print(*mat[i],sep=" ")
+	exit()
 for i in range(0,1):
 	for j in range(c):
 		for k in range(1,r):

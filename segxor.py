@@ -1,6 +1,6 @@
 row,col=input().split()
 col=int(col)
-values=input().rstrip()
+values=input()
 values=list(map(int,values.split(" ")))
 for i in range(col):
 	nodes=input()
@@ -10,4 +10,4 @@ for i in range(col):
 	l=len(temp)
 	for j in range(l):
 		x^=temp[j]
-	print(x,end="\r")
+	print(x)

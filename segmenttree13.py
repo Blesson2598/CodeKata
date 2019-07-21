@@ -1,6 +1,6 @@
 row,col=input().split()
 col=int(col)
-values=input()
+values=input().rstrip()
 values=list(map(int,values.split(" ")))
 for i in range(col):
 	nodes=input()

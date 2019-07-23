@@ -10,7 +10,7 @@ l=len(li);c=0
 m=max(li)
 while c<l-1:
 	if (li[c]+m)==val:
-		print("yes")
+		print("YES")
 		exit()
 	c+=1	
-print("no")		
+print("NO")		

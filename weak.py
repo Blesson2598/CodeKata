@@ -1,6 +1,7 @@
 size=int(input());count=0
 arr=input()
 arr=list(map(int,arr.split(" ")))
+size=len(arr)
 for i in range(size):
 	for j in range(i+1,size):
 		for k in range(j+1,size):

@@ -2,7 +2,7 @@ s=input();l=len(s)
 subs=[];c=1
 while c<l:
 	for i in range(0,l):
-		temp=s[i:i+c]
+		temp=s[i:i+c+1]
 		subs.append(temp)
 	c+=1
 l=len(subs)

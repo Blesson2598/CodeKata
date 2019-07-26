@@ -9,12 +9,12 @@ def isprime(c):
 	
 	
 start,end=list(map(int,input().split()));count=0
-for i in range(start,end):
+for i in range(start,end+1):
 	temp=bin(i)
 	temp=temp[2:]
 	c=temp.count('1')
 	f=isprime(c)
-	if f==1 and i!=1:
+	if f==1 and c!=1:
 		count+=1
 print(count)		
 		

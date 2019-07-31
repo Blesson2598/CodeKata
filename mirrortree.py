@@ -13,25 +13,25 @@ def insert(root,parent,node):
         else:
             insert(root.left,parent,node)
             insert(root.right,parent,node)
-def printright(root):
-    if root is None:
+def mirror(node):  
+    if (node == None): 
         return
-    if root.right is not None:
-        print(root.val,end=" ")
-    if root.right is not None:
-        print(root.right.val)
-        printright(root.right)
-    else:
+    else: 
+        temp = node  
+        mirror(node.left)  
+        mirror(node.right)  
+        temp = node.left  
+        node.left = node.right  
+        node.right = temp  
+def inorder(node) : 
+    if node is None:
         return
-def printleft(root):
-    if root is None:
-        return
-    if root.left is not None:
-        print(root.val,end=" ")
-    if root.left is not None:
-        print(root.left.val)
-        printleft(root.left)
-        
+    if node.left is not None:
+        print(node.val,node.left.val)
+    if node.right is not None:
+        print(node.val,node.right.val)
+    inorder(node.right)  
+    inorder(node.left)  
 size=int(input())
 if size==1:
     print(1)
@@ -40,5 +40,5 @@ root=Node(1)
 for i in range(size-1):
 	parent,child=map(int,input().split())
 	insert(root,parent,Node(child))
-printright(root)
-printleft(root)
+mirror(root)
+inorder(root)

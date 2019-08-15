@@ -34,11 +34,11 @@ while 1:
     else:
         index=arr[1].index(queue[0])
         cos+=arr[1][index]
+        if index==n:
+            cost.append(w)
         del queue[0]
-        find(index,cos)
+        find(index,cos)        
 if len(cost)==0:
     print("-1")
     exit()
 print(min(cost))        
-        
-        

@@ -18,7 +18,7 @@ def find(row,cos):
 n,m=map(int,input().split())
 arr=[]
 for i in range(n+1):
-    temp=[0]*6
+    temp=[0]*(n+1)
     arr.append(temp)
 queue=[]    
 for i in range(m):
